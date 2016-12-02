@@ -1,6 +1,6 @@
 # Getting And Cleaning Data - Assignment
 
-## There is just one script called `run_analysis.R`. This is how it works
+### There is just one script called `run_analysis.R`. This is how it works
 
 Note: The script assumes you have the directory of the UCI HAR dataset folder as your working directory.
 
@@ -21,7 +21,7 @@ Note: The script assumes you have the directory of the UCI HAR dataset folder as
 
 ... once the script is finished it will open the output as a table view.
 
-## To r my script from the command line
+### To run my script from the command line
 
 1. Clone this repo
 2. Run the script:
