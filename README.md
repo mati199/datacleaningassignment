@@ -12,20 +12,11 @@ Note: The script assumes you have the directory of the UCI HAR dataset folder as
 
 4) rbinds the datasets into one dataset
 
-5) cleans the dataset by applying the melt function to get each signal reading to be a separate row
+5) creates a vector of column indeces where the colnames contain mean() or std() then filters out the columns that dont
 
-6) i use the filter function from dplyr and query a regular expression filtering all rows containing mean() and std()
+6) use ddply to apply the colMeans functions for the mean and std columns
 
-7) i then summarise the dataset using the group_by function to calculate a mean for every activity for every subject and signal
+7) use the levels function, getting the corresponding activity from the activity_labels file
 
-
-... once the script is finished it will open the output as a table view.
-
-### To run my script from the command line
-
-1. Clone this repo
-2. Run the script:
-
-       $ Rscript run_analysis.R
-
+... once the script is finished it will open the output as a table view and write the output to a file `run_analysis_output.R` in the working directory and also open the table in RStudio.
 
